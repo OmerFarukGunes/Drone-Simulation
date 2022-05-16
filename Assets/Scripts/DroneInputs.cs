@@ -40,7 +40,6 @@ namespace OmerFG
         }
         private void OnThrottle(InputValue value)
         {
-            Debug.Log(value);
             throttle = value.Get<float>();
         }
         #endregion

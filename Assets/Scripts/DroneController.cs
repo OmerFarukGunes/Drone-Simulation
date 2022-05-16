@@ -16,12 +16,12 @@ namespace OmerFG
         [SerializeField] private float yawPower = 4f;
         [SerializeField] private float lerpSpeed = 2f;
 
-        private DroneInputs input;
+        public DroneInputs input;
         private List<IEngine> engines = new List<IEngine>();
         private float finalPitch;
         private float finalRoll;
         private float finalYaw;
-        private float yaw;
+        public float yaw;
         #endregion
 
         #region Main Methods
