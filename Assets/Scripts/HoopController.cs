@@ -32,6 +32,7 @@ public class HoopController : MonoBehaviour
     {
         if (other.CompareTag("Green"))
         {
+            other.gameObject.GetComponentInChildren<ParticleSystem>().Play();
             HoopSetColorRed(other.gameObject);
             int index = Hoops.FindIndex(x => x.Equals(other.gameObject));
             if (Hoops.Count > index + 1)
