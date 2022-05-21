@@ -12,6 +12,8 @@ public class HoopController : MonoBehaviour
     public Sprite GreenSprite;
     [SerializeField]
     public Sprite RedSprite;
+    [SerializeField]
+    public Sprite YellowSprite;
 
 
     #endregion
@@ -21,7 +23,11 @@ public class HoopController : MonoBehaviour
         if (Hoops != null && Hoops.Count > 0)
         {
             HoopSetColorGreen(Hoops[0]);
-            for (int i = 1; i < Hoops.Count; i++)
+            if (Hoops.Count > 1)
+            {
+                HoopSetColorYellow(Hoops[1]);
+            }
+            for (int i = 2; i < Hoops.Count; i++)
             {
                 HoopSetColorRed(Hoops[i]);
             }
@@ -38,6 +44,11 @@ public class HoopController : MonoBehaviour
             if (Hoops.Count > index + 1)
             {
                 HoopSetColorGreen(Hoops[++index]);
+                //Bir sonraki hoop sar? yap?ld?
+                if (Hoops.Count > index + 1)
+                {
+                    HoopSetColorYellow(Hoops[++index]);
+                }
             }
         }
     }
@@ -52,5 +63,11 @@ public class HoopController : MonoBehaviour
     {
         hoop.tag = "Green";
         hoop.GetComponent<SpriteRenderer>().sprite = GreenSprite;
+    }
+
+    private void HoopSetColorYellow(GameObject hoop)
+    {
+        hoop.tag = "Yellow";
+        hoop.GetComponent<SpriteRenderer>().sprite = YellowSprite;
     }
 }

@@ -264,6 +264,7 @@ MonoBehaviour:
   - {fileID: 151831899}
   GreenSprite: {fileID: 21300000, guid: 0ba6eacafb5789b4b93c7a75aaeca5e2, type: 3}
   RedSprite: {fileID: 21300000, guid: b2353d2543ffecb46ac5f9ff4c022bd5, type: 3}
+  YellowSprite: {fileID: 21300000, guid: 0ef1d9735665d7849afdc68d3ce045b2, type: 3}
 --- !u!65 &286218395
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -471,15 +472,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1884172069254401503, guid: 5ce22eab4402ec843ba562f852015ce4, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.220533
+      value: 0.22053301
       objectReference: {fileID: 0}
     - target: {fileID: 1884172069254401503, guid: 5ce22eab4402ec843ba562f852015ce4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000020143078
+      value: 0.000000016146593
       objectReference: {fileID: 0}
     - target: {fileID: 1884172069254401503, guid: 5ce22eab4402ec843ba562f852015ce4, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000004554344
+      value: -0.0000000036507397
       objectReference: {fileID: 0}
     - target: {fileID: 3737822224903344672, guid: 5ce22eab4402ec843ba562f852015ce4, type: 3}
       propertyPath: m_Name
@@ -531,15 +532,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7569422210536969048, guid: 5ce22eab4402ec843ba562f852015ce4, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.220533
+      value: 0.22053301
       objectReference: {fileID: 0}
     - target: {fileID: 7569422210536969048, guid: 5ce22eab4402ec843ba562f852015ce4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000020143078
+      value: 0.000000016146593
       objectReference: {fileID: 0}
     - target: {fileID: 7569422210536969048, guid: 5ce22eab4402ec843ba562f852015ce4, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000004554344
+      value: -0.0000000036507397
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ce22eab4402ec843ba562f852015ce4, type: 3}
@@ -803,10 +804,6 @@ PrefabInstance:
     - target: {fileID: 1388807650699265586, guid: a5df17760aeb4ce4b8e7916b14d84af2, type: 3}
       propertyPath: m_Name
       value: NeonSquare
-      objectReference: {fileID: 0}
-    - target: {fileID: 5660930770075377054, guid: a5df17760aeb4ce4b8e7916b14d84af2, type: 3}
-      propertyPath: playOnAwake
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5df17760aeb4ce4b8e7916b14d84af2, type: 3}
