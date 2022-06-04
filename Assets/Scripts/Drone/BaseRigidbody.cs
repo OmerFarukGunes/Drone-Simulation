@@ -33,10 +33,7 @@ namespace OmerFG
         private void FixedUpdate()
         {
             if (!rb)
-            {
-
                 return;
-            }
 
             HandlePhysics();
         }

@@ -353,6 +353,8 @@ GameObject:
   - component: {fileID: 2611930410548007400}
   - component: {fileID: 2611930410548007401}
   - component: {fileID: 2611930410548007406}
+  - component: {fileID: 286218395}
+  - component: {fileID: 286218394}
   m_Layer: 0
   m_Name: Drone
   m_TagString: Untagged
@@ -389,6 +391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33dbb49a01013934fb63d7b6553c1d08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lightObj: {fileID: 1112986901}
 --- !u!54 &2611930410548007400
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -423,7 +426,6 @@ MonoBehaviour:
   minMaxRoll: 30
   yawPower: 1
   lerpSpeed: 1
-  gates: []
   input: {fileID: 0}
   yaw: 0
 --- !u!114 &2611930410548007406
@@ -456,6 +458,51 @@ MonoBehaviour:
   m_DefaultActionMap: Drone
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!65 &286218395
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2611930410548007403}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 142.18, y: 28.15, z: 102.68}
+  m_Center: {x: 0, y: -7.1, z: 0}
+--- !u!114 &286218394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2611930410548007403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3dc750541cdf0e4a810016d25245a48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hoops:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  GreenSprite: {fileID: 21300000, guid: 0ba6eacafb5789b4b93c7a75aaeca5e2, type: 3}
+  RedSprite: {fileID: 21300000, guid: b2353d2543ffecb46ac5f9ff4c022bd5, type: 3}
+  YellowSprite: {fileID: 21300000, guid: 0ef1d9735665d7849afdc68d3ce045b2, type: 3}
 --- !u!1 &2611930411082799629
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,6 +657,38 @@ Transform:
   m_Father: {fileID: 2611930410548007402}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2611930410151119243
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2953825959814640806}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 30, y: 35, z: 50}
+  m_Center: {x: 0, y: -10.95, z: -4.46}
+--- !u!95 &2611930410151119349
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2953825959814640806}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6ca68a43015f93848b6959d947210095, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &2611930410151119351
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -759,6 +838,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b6f42ad95ed40843ad435a1e07f30ab, type: 3}
+--- !u!1 &2953825959814640806 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0b6f42ad95ed40843ad435a1e07f30ab, type: 3}
+  m_PrefabInstance: {fileID: 2611930410151119351}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7895254842792862732 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -3913939597532271109, guid: 0b6f42ad95ed40843ad435a1e07f30ab, type: 3}
@@ -769,40 +853,3 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0b6f42ad95ed40843ad435a1e07f30ab, type: 3}
   m_PrefabInstance: {fileID: 2611930410151119351}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2953825959814640806 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0b6f42ad95ed40843ad435a1e07f30ab, type: 3}
-  m_PrefabInstance: {fileID: 2611930410151119351}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &2611930410151119243
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2953825959814640806}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 30, y: 35, z: 50}
-  m_Center: {x: 0, y: -10.95, z: -4.46}
---- !u!95 &2611930410151119349
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2953825959814640806}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6ca68a43015f93848b6959d947210095, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0

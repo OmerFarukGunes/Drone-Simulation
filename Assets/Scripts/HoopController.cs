@@ -24,13 +24,9 @@ public class HoopController : MonoBehaviour
         {
             HoopSetColorGreen(Hoops[0]);
             if (Hoops.Count > 1)
-            {
                 HoopSetColorYellow(Hoops[1]);
-            }
             for (int i = 2; i < Hoops.Count; i++)
-            {
                 HoopSetColorRed(Hoops[i]);
-            }
         }
     }
 
@@ -38,18 +34,17 @@ public class HoopController : MonoBehaviour
     {
         if (other.CompareTag("Green"))
         {
+
             other.gameObject.GetComponentInChildren<ParticleSystem>().Play();
             HoopSetColorRed(other.gameObject);
             int index = Hoops.FindIndex(x => x.Equals(other.gameObject));
             if (Hoops.Count > index + 1)
             {
                 HoopSetColorGreen(Hoops[++index]);
-                //Bir sonraki hoop sar? yap?ld?
                 if (Hoops.Count > index + 1)
-                {
                     HoopSetColorYellow(Hoops[++index]);
-                }
             }
+            other.gameObject.SetActive(false);
         }
     }
 
