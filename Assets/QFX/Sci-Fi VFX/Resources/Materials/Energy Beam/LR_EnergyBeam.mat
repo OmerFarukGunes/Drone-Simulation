@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: LR_EnergyBeam
+  m_Shader: {fileID: 4800000, guid: 596b4dcd3bb54caeafc81e5154537134, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AuraTex:
+        m_Texture: {fileID: 2800000, guid: c51e1b5dddc24cefb834f9c6ec7b6df8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CoreTex:
+        m_Texture: {fileID: 2800000, guid: 8784581f490f41a5aefd7d892e83a136, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: -0.01}
+    - _CoreTexture:
+        m_Texture: {fileID: 2800000, guid: c51e1b5dddc24cefb834f9c6ec7b6df8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DistortionMap:
+        m_Texture: {fileID: 2800000, guid: 2599cf4c583747d1a3349f2dae9dc301, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DistortionTex:
+        m_Texture: {fileID: 2800000, guid: 2599cf4c583747d1a3349f2dae9dc301, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainNoiseTex:
+        m_Texture: {fileID: 2800000, guid: 3c00c0f5ed2848fbbf75df929403e0a3, type: 3}
+        m_Scale: {x: 3, y: 0.8}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 8784581f490f41a5aefd7d892e83a136, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 2800000, guid: 13737a8fbff147eb84f5a07e26040e79, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseMap:
+        m_Texture: {fileID: 2800000, guid: 2599cf4c583747d1a3349f2dae9dc301, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 1}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _a:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _tex4coord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AppearProgress: 0
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DistortionPower: 0.02
+    - _DistortionTilling: 0
+    - _DstBlend: 0
+    - _Float0: 1
+    - _Float1: 0.71
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _InvFade: 3
+    - _MaskAdjustPower: 0.1
+    - _Metallic: 0
+    - _Mode: 0
+    - _NoiseDistortionPower: 0.05
+    - _NoiseDistortionTilling: 1
+    - _NoiseOffset: 0
+    - _NoisePower: 0.08
+    - _NoiseTilling: 1.9
+    - _OcclusionStrength: 1
+    - _OpacityPower: 1
+    - _POW: 4.46
+    - _Parallax: 0.02
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _ZWrite: 1
+    - __dirty: 0
+    m_Colors:
+    - _AuraColor: {r: 0, g: 1.2758613, b: 5, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color0: {r: 0, g: 1.2938552, b: 4.3630004, a: 1}
+    - _DisotrionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _DistortionSpeed: {r: -0.5, g: 0, b: 0, a: 0}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _MainSpeed: {r: 0, g: 0, b: 0, a: 0}
+    - _NoiseDistortionSpeed: {r: -0.8, g: 0, b: 0, a: 0}
+    - _NoiseSpeed: {r: -3, g: 0, b: 0, a: 0}
+    - _OuterColor: {r: 0, g: 0, b: 0, a: 1}
+    - _TintColor: {r: 1.0661767, g: 2.7210956, b: 5.000001, a: 1}

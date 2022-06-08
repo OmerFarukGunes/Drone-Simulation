@@ -22,12 +22,13 @@ namespace OmerFG
         public Vector2 Cyclic { get => cyclic; }
         public float Pedals { get => pedals; }
         public float Throttle { get => throttle; }
-        public float Shoot { get => throttle; }
+        public float Shoot { get => shoot; }
         public float Light { get => throttle; }
 
+        DroneController droneController;
+
         #endregion
-
-
+        private void Start() => droneController = FindObjectOfType<DroneController>();
         #region Input Methods
         void OnCyclic (InputValue value)
         {
@@ -43,14 +44,12 @@ namespace OmerFG
         }
         private void OnShoot(InputValue value)
         {
+            Debug.Log("QWDSF");
             shoot = value.Get<float>();
-           
         } 
         private void OnLight(InputValue value)
         {
-            light = value.Get<float>();
-            if (light > 0)
-                lightObj.SetActive(!lightObj.active);
+             lightObj.SetActive(!lightObj.active);
         }
         #endregion
 

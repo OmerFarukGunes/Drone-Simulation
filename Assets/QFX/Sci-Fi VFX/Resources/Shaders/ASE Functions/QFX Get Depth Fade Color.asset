@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: QFX Get Depth Fade Color
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor\n// Available at the Unity Asset
+    Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=16100\n0;730;1180;298;1144.173;39.26231;1.426303;True;False\nNode;AmplifyShaderEditor.RangedFloatNode;4;-400.7789,216.3706;Float;False;Property;_DepthFadeExp;Depth
+    Fade Exp;6;0;Create;True;0;0;False;0;5.316663;10;0.2;10;0;1;FLOAT;0\nNode;AmplifyShaderEditor.OneMinusNode;3;-440.25,60.20258;Float;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;1;-899.1854,81.56207;Float;False;Property;_DepthDistance;Depth
+    Distance;5;0;Create;True;0;0;False;0;0;0.5;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.DepthFade;2;-705.1382,62.62888;Float;False;True;False;True;2;1;FLOAT3;0,0,0;False;0;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SaturateNode;5;-285.907,60.02795;Float;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.PowerNode;7;-80.57495,108.3706;Float;True;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;8;156.5861,107.9348;Float;False;2;2;0;FLOAT;0;False;1;COLOR;0,0,0,0;False;1;COLOR;0\nNode;AmplifyShaderEditor.ColorNode;6;-47.41199,381.3143;Float;False;Property;_DepthColor;Depth
+    Color;4;1;[HDR];Create;True;0;0;False;0;1,1,1,1;4,0.744827,0,1;False;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.FunctionOutput;0;303,107;Float;True;True;Output;0;False;1;0;COLOR;0,0,0,0;False;1;COLOR;0\nWireConnection;3;0;2;0\nWireConnection;2;0;1;0\nWireConnection;5;0;3;0\nWireConnection;7;0;5;0\nWireConnection;7;1;4;0\nWireConnection;8;0;7;0\nWireConnection;8;1;6;0\nWireConnection;0;0;8;0\nASEEND*/\n//CHKSM=B28585BCBC4C48BF76436E233B4E4398A85E386D"
+  m_functionName: 
+  m_description: 
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 3
+  m_customNodeCategory: 
+  m_previewPosition: 0
+  m_hidden: 0

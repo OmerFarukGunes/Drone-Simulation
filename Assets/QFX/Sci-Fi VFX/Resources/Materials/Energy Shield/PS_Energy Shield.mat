@@ -1,0 +1,194 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PS_Energy Shield
+  m_Shader: {fileID: 4800000, guid: 13e9a51c250b40c3add5c91c36957a52, type: 3}
+  m_ShaderKeywords: _BLENDHITPATTERN_ON _BLENDHITWAVEPATTERN_ON _MASKAPPEARAXIS_Y
+    _USESELFWORLDPOSITION_ON
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3100
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 25abf136debd4377867ae621891f3adb, type: 3}
+        m_Scale: {x: 2, y: 2}
+        m_Offset: {x: 0, y: 0}
+    - _CutOutA:
+        m_Texture: {fileID: 2800000, guid: 765d198b4f0b4b8cb084c4e572821af5, type: 3}
+        m_Scale: {x: 5, y: 5}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DistortionMap:
+        m_Texture: {fileID: 2800000, guid: 2599cf4c583747d1a3349f2dae9dc301, type: 3}
+        m_Scale: {x: 5, y: 5}
+        m_Offset: {x: 0, y: 0}
+    - _DistortionTexture:
+        m_Texture: {fileID: 2800000, guid: cb27b50c59064eb196aacb4c59d9b100, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 2800000, guid: c6c0eeac2acf4b87b4f6a3e437fc1de0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HitNoise:
+        m_Texture: {fileID: 2800000, guid: 645c7247ad794af5b530abfe0c265844, type: 3}
+        m_Scale: {x: 5, y: 5}
+        m_Offset: {x: 0, y: 0}
+    - _HitNoiseMap:
+        m_Texture: {fileID: 2800000, guid: 028b10f1bb6a49cc8f7cddcd435ba34e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HitNoiseTexture:
+        m_Texture: {fileID: 2800000, guid: cb27b50c59064eb196aacb4c59d9b100, type: 3}
+        m_Scale: {x: 1, y: 0}
+        m_Offset: {x: 0, y: 0}
+    - _HitRampMap:
+        m_Texture: {fileID: 2800000, guid: eb92b67a79a3452aba411574d6075cf0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HitTexture:
+        m_Texture: {fileID: 2800000, guid: ac975eace072453bba4ef614a74de284, type: 3}
+        m_Scale: {x: 20, y: 20}
+        m_Offset: {x: 0, y: 0}
+    - _HitWaveRampMap:
+        m_Texture: {fileID: 2800000, guid: eb92b67a79a3452aba411574d6075cf0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: c73bb001eda54ece8396f89e4ce3e342, type: 3}
+        m_Scale: {x: 5, y: 5}
+        m_Offset: {x: 0, y: 0}
+    - _MaskAppearNoise:
+        m_Texture: {fileID: 2800000, guid: 2599cf4c583747d1a3349f2dae9dc301, type: 3}
+        m_Scale: {x: 5, y: 5}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseMap:
+        m_Texture: {fileID: 2800000, guid: 645c7247ad794af5b530abfe0c265844, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTexture:
+        m_Texture: {fileID: 2800000, guid: 3c00c0f5ed2848fbbf75df929403e0a3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 2800000, guid: 09830db3de7c4f6dbcbafa13bb8533b4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _tex4coord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BlendHitPattern: 1
+    - _BlendHitWavePattern: 1
+    - _BumpScale: 2
+    - _Cutoff: 0.5
+    - _DepthDistance: 0.83
+    - _DepthFadeExp: 10
+    - _DetailNormalMapScale: 1
+    - _DissolveAmount: 1
+    - _DissolveSize: 0.59
+    - _Distortion: 0.033
+    - _DistortionSpeed: 5
+    - _DstBlend: 0
+    - _EdgeLength: 15
+    - _Float0: -0.17
+    - _Float1: 0
+    - _FresnelPower: 1.12
+    - _FresnelScale: 1
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _HitDuration: 1
+    - _HitFade: 1
+    - _HitFadeRadius: 1
+    - _HitHardness: 0.5840522
+    - _HitMaxRadius: 2.15
+    - _HitNoiseTilling: 1
+    - _HitRadius: 0.436
+    - _HitSize: 0.47
+    - _HitStrength: 0.05
+    - _HitTilling: 40
+    - _HitTime: 0
+    - _HitWaveFade: 1
+    - _HitWaveMaxRadius: 2.15
+    - _HitWaveRadius: 0.375
+    - _HitsMaxCount: 0
+    - _MaskAppearAxis: 2
+    - _MaskAppearInvert: 0
+    - _MaskAppearProgress: 0
+    - _MaskAppearStrength: 0.225
+    - _MaxDistance: 1.11
+    - _Metallic: 0
+    - _Mode: 0
+    - _NoiseDistortionPower: 2
+    - _NoiseDistortionTilling: 3.85
+    - _NoiseOffset: 0.024
+    - _NoisePower: 0.1
+    - _NoiseSpeed: 0.52
+    - _NoiseTilling: 1.05
+    - _OcclusionStrength: 1.27
+    - _OpacityPower: 1
+    - _Parallax: 0.02
+    - _Scale: 8
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 0.53
+    - _UVSec: 0
+    - _UseSelfWorldPosition: 1
+    - _VertexOffsetAmount: 0
+    - _ZWrite: 1
+    - __dirty: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _DepthColor: {r: 0.8529408, g: 1.5257602, b: 4, a: 1}
+    - _DisotrionColor: {r: 1.3766438, g: 1.3766438, b: 1.3766438, a: 1}
+    - _DistortionSpeed: {r: 0, g: 0.4, b: 0, a: 0}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _HitColor: {r: 1.492636, g: 3.3537521, b: 7.000021, a: 1}
+    - _HitNoiseSpeed: {r: 0, g: 0, b: 0, a: 0}
+    - _HitSpeed: {r: 0, g: 0.01, b: 0, a: 0}
+    - _HitWorldPosition: {r: 0, g: 3, b: -3, a: 0}
+    - _NoiseDistortionSpeed: {r: 0, g: 0.08, b: 0, a: 0}
+    - _NoiseDistortionTilling: {r: 8, g: 8, b: 0, a: 0}
+    - _NoiseSpeed: {r: 0, g: 0.15, b: 0, a: 0}
+    - _NoiseTilling: {r: 10, g: 10, b: 0, a: 0}
+    - _ObjectWorldPosition: {r: 0, g: 0, b: 14.88, a: 0}
+    - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
+    - _TintColor: {r: 0.8529389, g: 1.9164275, b: 4, a: 1}
+    - _Vector0: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []

@@ -4,7 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Dark City 2/Demo/Test_Scene.unity
+    guid: d41d805d7a9691641998dd1f83f55595
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 9f24e737d56ab5e4386c4436afd585e8, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: fd9b8db949d3d754b8ea52be9e0f2bcf, type: 2}

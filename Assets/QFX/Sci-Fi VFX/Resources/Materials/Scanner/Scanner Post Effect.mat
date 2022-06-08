@@ -1,0 +1,169 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Scanner Post Effect
+  m_Shader: {fileID: 4800000, guid: 36cbf2df4f29401b8fe70d18c9a7ed86, type: 3}
+  m_ShaderKeywords: _GRAYSCALE_ON _ISANIMATED_ON _LERPSONAR_ON _TOGGLESWITCH0_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3000
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CameraDepthNormalsTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailTex:
+        m_Texture: {fileID: 2800000, guid: 2e8c5116007864544a4adc82c10f7cfe, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GridTexture:
+        m_Texture: {fileID: 2800000, guid: ac975eace072453bba4ef614a74de284, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Noise:
+        m_Texture: {fileID: 2800000, guid: cfa60370e2c06f64ab63d0f52b57e513, type: 3}
+        m_Scale: {x: 5, y: 5}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample0:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample2:
+        m_Texture: {fileID: 2800000, guid: 6abe3c7059a947bfa24f6b456efdcd1f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _Dis: 1.36
+    - _Distance: 0
+    - _DstBlend: 0
+    - _EdgePower: 4
+    - _EdgeWidth: 6
+    - _Float0: 5.36
+    - _Float1: 6
+    - _Float2: 8
+    - _Float6: 0.5
+    - _Float7: 2.86
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _GrayScale: 1
+    - _GridOffsetX: 0
+    - _GridOffsetY: 0
+    - _GridSize: 200
+    - _GridTexturePow: 5
+    - _GridTilling: 9.18
+    - _Intense: 6
+    - _Intensity: 7
+    - _Invert: 0
+    - _IsAnimated: 1
+    - _LeadSharp: 2.51
+    - _LerpSonar: 1
+    - _MaxDistance: 73.85
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _OutlineThreshold: 0.02
+    - _Parallax: 0.02
+    - _Power: 1
+    - _ScanAmount: 0.29
+    - _ScanDistance: 0
+    - _ScanIntencse: 0.8
+    - _ScanTiling: 68
+    - _ScanWidth: 5
+    - _Sharp: 1
+    - _SmoothnessTextureChannel: 0
+    - _Sobel: 1
+    - _SobelTiling: 0.3
+    - _SobelTilins: 0.5
+    - _SonarIntencity: 1
+    - _SonarSpeed: 1
+    - _SpecularHighlights: 1
+    - _Speed: 10
+    - _SrcBlend: 1
+    - _Thikness: 500
+    - _ToggleSwitch0: 1
+    - _UVSec: 0
+    - _ZWrite: 1
+    - __dirty: 0
+    - _intensity: 6
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color0: {r: 0.40873668, g: 0.41038626, b: 0.41176435, a: 1}
+    - _Color1: {r: 1, g: 0.007352948, b: 0.007352948, a: 1}
+    - _EdgeColor: {r: 0, g: 0.2965516, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _GridColor: {r: 0.2794118, g: 0.2794118, b: 0.2794118, a: 1}
+    - _HBarColor: {r: 0.30147058, g: 0.30147058, b: 0.30147058, a: 0}
+    - _InnerColor: {r: 0.27205873, g: 0.5481745, b: 1, a: 1}
+    - _LeadColor: {r: 1, g: 1, b: 1, a: 1}
+    - _LineColor: {r: 1, g: 0, b: 0, a: 1}
+    - _MidColor: {r: 0, g: 0.54482794, b: 1, a: 1}
+    - _OutlineColor: {r: 1, g: 0, b: 0, a: 1}
+    - _ScanSpeed: {r: 0, g: 0, b: 0, a: 0}
+    - _SobelColor: {r: 1, g: 0.5586207, b: 0, a: 1}
+    - _SonarColor: {r: 0.26470497, g: 0.6653143, b: 1, a: 1}
+    - _SourcePosition: {r: 0, g: 0, b: 0, a: 0}
+    - _TrailColor: {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 1}
+    - _Vector0: {r: 4.86, g: 7.35, b: 0, a: 0}
+    - _Vector1: {r: 0, g: 0, b: 0, a: 0}
+    - _WorldPosition: {r: 0.13, g: 0, b: 1.76, a: 0}
+    - _WorldSpaceScannerPos: {r: 0, g: 1, b: -5.54, a: 0}
+  m_BuildTextureStacks: []
