@@ -4,8 +4,9 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: PS_EnergyBeam_Flame
   m_Shader: {fileID: 4800000, guid: b11b42c7f55d4ae7aaa488cfcf850402, type: 3}
   m_ShaderKeywords: 
@@ -45,6 +46,7 @@ Material:
     - _POW: 31
     - __dirty: 0
     m_Colors:
-    - _Color: {r: 0, g: 2.1034486, b: 5.000003, a: 1}
+    - _Color: {r: 0, g: 0, b: 0, a: 1}
     - _Speed: {r: 0, g: 0, b: 0, a: 0}
     - _TintColor: {r: 3.0000002, g: 1.2003038, b: 0.99264663, a: 1}
+  m_BuildTextureStacks: []

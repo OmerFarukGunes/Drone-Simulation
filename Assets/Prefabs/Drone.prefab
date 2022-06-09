@@ -277,9 +277,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29961c3fb671c484a807aac573ea6134, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxPower: 4
+  maxPower: 5
   propeller: {fileID: 7895254842792862732}
-  propRotSpeed: 0
+  propRotSpeed: 1
 --- !u!1 &2611930410340132650
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,9 +337,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29961c3fb671c484a807aac573ea6134, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxPower: 4
+  maxPower: 5
   propeller: {fileID: 7895254842792862732}
-  propRotSpeed: 0
+  propRotSpeed: 1
 --- !u!1 &2611930410548007403
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,8 +425,8 @@ MonoBehaviour:
   audioSource: {fileID: 1159681445}
   minMaxPitch: 30
   minMaxRoll: 30
-  yawPower: 1
-  lerpSpeed: 1
+  yawPower: 2
+  lerpSpeed: 2
   hitEffect: {fileID: 1857612785575803631}
   input: {fileID: 0}
   yaw: 0
@@ -565,9 +565,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29961c3fb671c484a807aac573ea6134, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxPower: 4
+  maxPower: 5
   propeller: {fileID: 7895254842792862732}
-  propRotSpeed: 0
+  propRotSpeed: 1
 --- !u!1 &2611930411210877824
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,9 +625,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29961c3fb671c484a807aac573ea6134, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxPower: 4
+  maxPower: 5
   propeller: {fileID: 7895254842792862732}
-  propRotSpeed: 0
+  propRotSpeed: 1
 --- !u!1 &2611930411638286486
 GameObject:
   m_ObjectHideFlags: 0

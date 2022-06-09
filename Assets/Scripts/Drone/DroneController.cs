@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using DG.Tweening;
+using UnityEngine.UI;
+using TMPro;
+
 namespace OmerFG
 {
     [RequireComponent(typeof(DroneInputs))]
@@ -21,6 +24,11 @@ namespace OmerFG
 
         [Header("Effects")]
         [SerializeField] ParticleSystem hitEffect;
+
+        [Header("Health")]
+        [SerializeField] Image healthBar;
+        [SerializeField] TextMeshProUGUI healthBarText;
+        int health = 100;
 
         public DroneInputs input;
         private List<IEngine> engines = new List<IEngine>();
@@ -87,9 +95,21 @@ namespace OmerFG
             ContactPoint contact = collision.contacts[0];
             Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
             Vector3 pos = contact.point;
-            rb.AddForce(-pos * 2, ForceMode.Impulse);
-            hitEffect.transform.rotation = rot;
-            hitEffect.Play();
+            health -= (int) rb.velocity.magnitude ;
+            if (health / 100f > 0)
+            {
+                rb.AddForce(-pos * .4f, ForceMode.Impulse);
+                hitEffect.transform.rotation = rot;
+                hitEffect.Play();
+                healthBar.fillAmount = health / 100f;
+                healthBarText.text = health + "%";
+            }
+            else
+            {
+                
+
+            }
+           
         }
         void DroneSound()
         {

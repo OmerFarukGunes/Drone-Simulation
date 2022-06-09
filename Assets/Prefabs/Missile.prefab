@@ -14166,9 +14166,10 @@ GameObject:
   - component: {fileID: 4970921309445788}
   - component: {fileID: 54294066672295650}
   - component: {fileID: 1249473410492159990}
+  - component: {fileID: 5734883292670605441}
   m_Layer: 6
   m_Name: Missile
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14218,7 +14219,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletForce: 2000
   bulletHole: {fileID: 757168133592690660, guid: 871e8ee55a6c89346a52cfc2045f644a, type: 3}
-  distanceFromTheWall: 0.15
+--- !u!65 &5734883292670605441
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429951055001210}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.22321992, y: 0.2081818, z: 0.69313335}
+  m_Center: {x: 0.017577615, y: 0.006554341, z: 0.1534334}
 --- !u!1 &1742254842183000
 GameObject:
   m_ObjectHideFlags: 0
