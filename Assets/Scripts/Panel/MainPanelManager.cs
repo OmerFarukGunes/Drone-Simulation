@@ -183,14 +183,6 @@ namespace Michsky.UI.Shift
             }
         }
 
-        IEnumerator DisablePreviousPanel()
-        {
-            yield return new WaitForSeconds(0.5f);
-
-            if (useCulling == true)
-                currentPanel.SetActive(false);
-        }
-
         public void SetLevel() =>  SceneManager.LoadScene(1);
     }
  

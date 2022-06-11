@@ -24,11 +24,21 @@ namespace OmerFG
 
         [Header("Effects")]
         [SerializeField] ParticleSystem hitEffect;
+        [SerializeField] GameObject shootEffect;
 
         [Header("Health")]
         [SerializeField] Image healthBar;
         [SerializeField] TextMeshProUGUI healthBarText;
         int health = 100;
+
+        [Header("Parts")]
+        [SerializeField] List<GameObject> bodies;
+        [SerializeField] List<GameObject> cameras;
+        [SerializeField] List<GameObject> shoots;
+        int i = 0;
+        int j = 0;
+        int k = 0;
+
 
         public DroneInputs input;
         private List<IEngine> engines = new List<IEngine>();
@@ -56,6 +66,34 @@ namespace OmerFG
         }
 
         #endregion
+
+        private void Update()
+        {
+            if (Input.GetKeyDown("1"))
+            {
+                bodies[i].SetActive(false);
+                i = i + 1 > 2 ? 0 : i + 1;
+                SetMass();
+                bodies[i].SetActive(true);
+            }
+            else if (Input.GetKeyDown("2"))
+            {
+                cameras[j].SetActive(false);
+              
+                j = j + 1 > 2 ? 0 : j + 1;
+                SetMass();
+                cameras[j].SetActive(true);
+            }
+            else if (Input.GetKeyDown("3"))
+            {
+                shoots[k].SetActive(false);
+               
+                k = k + 1 > 2 ? 0 : k + 1;
+                SetMass();
+                shoots[k].SetActive(true);
+            }
+        }
+        void SetMass() => weightInLbs = 5 + i + j + k;
 
         #region Custom Methods
 
@@ -107,7 +145,6 @@ namespace OmerFG
             else
             {
                 
-
             }
            
         }
@@ -119,16 +156,19 @@ namespace OmerFG
 
         public void ShootingBullets() 
         {
-            if (input.Shoot>0)
+            if (input.Shoot > 0)
             {
                 if (waitTilNextFire <= 0)
                 {
                     Instantiate(bulletPrefab, gunTransform.position, transform.rotation);
                     waitTilNextFire = 1;
+                    if (!shootEffect.active)
+                        shootEffect.SetActive(true);
                 }
                 waitTilNextFire -= fireRate * Time.deltaTime;
             }
-          
+            else
+                shootEffect.SetActive(false);
         }
         #endregion
 

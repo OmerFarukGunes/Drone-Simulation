@@ -44,7 +44,6 @@ namespace OmerFG
         }
         private void OnShoot(InputValue value)
         {
-            Debug.Log("QWDSF");
             shoot = value.Get<float>();
         } 
         private void OnLight(InputValue value)

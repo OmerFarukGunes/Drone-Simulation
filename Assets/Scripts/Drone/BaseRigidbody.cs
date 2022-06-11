@@ -10,7 +10,7 @@ namespace OmerFG
         #region Variables
 
         [Header("Rigidbody Properties")]
-        [SerializeField] private float weightInLbs = 1f;
+        [SerializeField] public float weightInLbs = 1f;
 
         const float lbsToKg = 0.454f;
 

@@ -26,7 +26,6 @@ public class Bullet : MonoBehaviour
                 Vector3 position = hit.point;
                 Vector3 lookRotation = hit.normal;
                 Instantiate(bulletHole, position, Quaternion.LookRotation(lookRotation));
-                Destroy(gameObject);
             }
         Destroy(gameObject, 4.0f);
     }

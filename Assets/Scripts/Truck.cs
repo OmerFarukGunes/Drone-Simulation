@@ -4,12 +4,22 @@ using UnityEngine;
 
 public class Truck : MonoBehaviour
 {
+    [SerializeField] List<GameObject> effects;
+    [SerializeField] GameObject truck;
+    [SerializeField] GameObject crashedTruck;
+    private int health = 100;
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider coll)
     {
-        if (collision.gameObject.CompareTag("Bullet"))
+        if (coll.CompareTag("Bullet") && health >0)
         {
-            Debug.Log("asd");
+            health -= 5;
+            effects[health / 25].SetActive(true);
+            if (health <=0)
+            {
+                truck.SetActive(false);
+                crashedTruck.SetActive(true);
+            }
         }
     }
 }

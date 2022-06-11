@@ -35,50 +35,9 @@ namespace Michsky.UI.Shift
                 mpm.OpenFirstTab();
             }
 
-            if (enableLoginScreen == false && enablePressAnyKeyScreen == true && disableSplashScreen == false)
-            {
                 splashScreen.SetActive(true);
                 mainPanelsAnimator.Play("Invisible");
-            }
-
-            if (enableLoginScreen == true && enablePressAnyKeyScreen == true && disableSplashScreen == false)
-            {
-                splashScreen.SetActive(true);
-                mainPanelsAnimator.Play("Invisible");
-            }
-
-            if (enableLoginScreen == true && enablePressAnyKeyScreen == false && disableSplashScreen == false)
-            {
-                splashScreen.SetActive(true);
-                mainPanelsAnimator.Play("Invisible");
-                splashScreenAnimator.Play("Login");
-            }
-
-            if (enableLoginScreen == false && enablePressAnyKeyScreen == false && disableSplashScreen == false)
-            {
-                splashScreen.SetActive(true);
-                mainPanelsAnimator.Play("Invisible");
-                splashScreenAnimator.Play("Loading");
-                ssTimedEvent.StartIEnumerator();
-            }
         }
 
-        public void LoginScreenCheck()
-        {
-            if (enableLoginScreen == true && enablePressAnyKeyScreen == true)
-                splashScreenAnimator.Play("Press Any Key to Login");
-
-            else if (enableLoginScreen == false && enablePressAnyKeyScreen == true)
-            {
-                splashScreenAnimator.Play("Press Any Key to Loading");
-                ssTimedEvent.StartIEnumerator();
-            }
-
-            else if (enableLoginScreen == false && enablePressAnyKeyScreen == false)
-            {
-                splashScreenAnimator.Play("Loading");
-                ssTimedEvent.StartIEnumerator();
-            }
-        }
     }
 }
