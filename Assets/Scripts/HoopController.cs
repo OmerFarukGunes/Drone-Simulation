@@ -1,21 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class HoopController : MonoBehaviour
 {
 
     #region Variables
-    [SerializeField]
-    public List<GameObject> Hoops;
-    [SerializeField]
-    public Sprite GreenSprite;
-    [SerializeField]
-    public Sprite RedSprite;
-    [SerializeField]
-    public Sprite YellowSprite;
 
+    [SerializeField] List<GameObject> Hoops;
 
+    [SerializeField] Sprite GreenSprite;
+    [SerializeField] Sprite RedSprite;
+    [SerializeField] Sprite YellowSprite;
+
+    [SerializeField] TextMeshProUGUI missionTask;
+ 
     #endregion
 
     void Start()
@@ -34,11 +34,9 @@ public class HoopController : MonoBehaviour
     {
         if (other.CompareTag("Green"))
         {
-
             other.gameObject.GetComponentInChildren<ParticleSystem>().Play();
-
-           
             int index = Hoops.FindIndex(x => x.Equals(other.gameObject));
+            missionTask.text = "Complete Parkour: " + (index + 1) + "/16";
             if (Hoops.Count > index + 1)
             {
                 HoopSetColorGreen(Hoops[++index]);

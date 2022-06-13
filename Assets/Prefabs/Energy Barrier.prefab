@@ -41,7 +41,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4348353522650154}
   - component: {fileID: 108786749285475992}
-  - component: {fileID: 114895390884080532}
   m_Layer: 0
   m_Name: Point light
   m_TagString: Untagged
@@ -61,7 +60,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4340154174161570}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &108786749285475992
 Light:
@@ -125,65 +124,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &114895390884080532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1287211378554798}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af134c540f8f4dba98a200d4a9b421be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RunAtStart: 1
-  Delay: 0
-  LightIntensity:
-    AnimationCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 5.97978
-        outSlope: 5.97978
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.04971704
-        value: 0.9976852
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.94313884
-        value: 0.9976852
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 1
-        value: 0.0026954175
-        inSlope: -17.498583
-        outSlope: -17.498583
-        tangentMode: 34
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 0
-    ValueMultiplier: 4
-    TimeMultiplier: 30
 --- !u!1 &1411178508430852
 GameObject:
   m_ObjectHideFlags: 0
@@ -226,7 +166,6 @@ GameObject:
   - component: {fileID: 4340154174161570}
   - component: {fileID: 198540169277123748}
   - component: {fileID: 199348759221652436}
-  - component: {fileID: 114184020447516688}
   m_Layer: 0
   m_Name: PS_Energy Shield
   m_TagString: Untagged
@@ -245,7 +184,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4153149958711748}
   - {fileID: 4413491395303888}
   - {fileID: 4348353522650154}
   m_Father: {fileID: 4136292826019562}
@@ -5102,21 +5040,6 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &114184020447516688
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1447121344726418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 171918573dc144518e2b946e654c335f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RunAtStart: 1
-  Delay: 0
-  LifeTime: 30
 --- !u!1 &1458985639148092
 GameObject:
   m_ObjectHideFlags: 0
@@ -5198,84 +5121,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &1473427879958300
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4153149958711748}
-  - component: {fileID: 135204381228577790}
-  - component: {fileID: 114192878234643324}
-  - component: {fileID: 114687688509983128}
-  m_Layer: 0
-  m_Name: Shield Controller & Collisions
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4153149958711748
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1473427879958300}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4340154174161570}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &135204381228577790
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1473427879958300}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 3.75
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114192878234643324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1473427879958300}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d846180afb14be2a835d7e06df40bf8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RunAtStart: 1
-  Delay: 0
-  IsSingleCollisionMode: 0
---- !u!114 &114687688509983128
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1473427879958300}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbceb6e12c9e4f389974aabe03f17519, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RunAtStart: 1
-  Delay: 0
-  TargetRenderer: {fileID: 199348759221652436}
-  HitWaveSpeed: 1.5
-  ProvideObjectWorldCoordinates: 1
 --- !u!1 &1550793012090784
 GameObject:
   m_ObjectHideFlags: 0
@@ -5287,7 +5132,6 @@ GameObject:
   - component: {fileID: 4413491395303888}
   - component: {fileID: 198213882758357684}
   - component: {fileID: 199547736426687984}
-  - component: {fileID: 114699636422766590}
   m_Layer: 0
   m_Name: PS_Energy Disk
   m_TagString: Untagged
@@ -5307,7 +5151,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4340154174161570}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &198213882758357684
 ParticleSystem:
@@ -10169,26 +10013,6 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &114699636422766590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1550793012090784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86632329aeca4c37ba0e99e9f1f640c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RunAtStart: 1
-  Delay: 0
-  LayerMask:
-    serializedVersion: 2
-    m_Bits: 0
-  MaxDistance: 100
-  OverrideRotation: 0
-  Offset: {x: 0, y: 0.05, z: 0}
 --- !u!1 &1723646520176994
 GameObject:
   m_ObjectHideFlags: 0
