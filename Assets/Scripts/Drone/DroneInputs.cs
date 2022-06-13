@@ -15,18 +15,17 @@ public class DroneInputs : MonoBehaviour
     private float pedals;
     private float throttle;
     private float shoot;
-    private float light;
+    private float lightInput;
 
     public Vector2 Cyclic { get => cyclic; }
     public float Pedals { get => pedals; }
     public float Throttle { get => throttle; }
     public float Shoot { get => shoot; }
-    public float Light { get => throttle; }
-
-    DroneController droneController;
+    public float LightInput { get => lightInput; }
+    
 
     #endregion
-    private void Start() => droneController = FindObjectOfType<DroneController>();
+
     #region Input Methods
     void OnCyclic(InputValue value)
     {
@@ -44,9 +43,12 @@ public class DroneInputs : MonoBehaviour
     {
         shoot = value.Get<float>();
     }
-    private void OnLight(InputValue value)
+    private void OnLightInput(InputValue value)
     {
-        lightObj.SetActive(!lightObj.active);
+        lightInput = value.Get<float>();
+        if (lightInput > 0)
+            lightObj.SetActive(!lightObj.active);
+        
     }
     #endregion
 

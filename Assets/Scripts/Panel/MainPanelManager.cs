@@ -98,7 +98,6 @@ namespace Michsky.UI.Shift
 
             if (newPanelIndex != currentPanelIndex)
             {
-                StopCoroutine("DisablePreviousPanel");
 
                 currentPanel = panels[currentPanelIndex].panelObject;
                 currentPanelIndex = newPanelIndex;
@@ -111,7 +110,6 @@ namespace Michsky.UI.Shift
                 currentPanelAnimator.Play(panelFadeOut);
                 nextPanelAnimator.Play(panelFadeIn);
 
-                StartCoroutine("DisablePreviousPanel");
 
                 currentButton = panels[currentButtonIndex].buttonObject;
                 currentButtonIndex = newPanelIndex;
@@ -129,7 +127,6 @@ namespace Michsky.UI.Shift
         {
             if (currentPanelIndex <= panels.Count - 2)
             {
-                StopCoroutine("DisablePreviousPanel");
 
                 currentPanel = panels[currentPanelIndex].panelObject;
                 currentButton = panels[currentButtonIndex].buttonObject;
@@ -158,7 +155,6 @@ namespace Michsky.UI.Shift
         {
             if (currentPanelIndex >= 1)
             {
-                StopCoroutine("DisablePreviousPanel");
 
                 currentPanel = panels[currentPanelIndex].panelObject;
                 currentButton = panels[currentButtonIndex].buttonObject;

@@ -175,7 +175,7 @@ public class DroneController : BaseRigidbody
         health -= (int)rb.velocity.magnitude * 2;
         if (health / 100f > 0)
         {
-            rb.AddForce(-pos * .4f, ForceMode.Impulse);
+            rb.AddForce(-pos * .3f, ForceMode.Impulse);
             hitEffect.transform.rotation = rot;
             hitEffect.Play();
             healthBar.fillAmount = health / 100f;
