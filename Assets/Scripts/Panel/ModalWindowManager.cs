@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 namespace Michsky.UI.Shift
 {
@@ -68,6 +69,10 @@ namespace Michsky.UI.Shift
         {
             yield return new WaitForSeconds(0.5f);
             gameObject.SetActive(false);
+        }
+        public void ExitToMainMenu()
+        {
+            SceneManager.LoadScene(0);
         }
     }
 }

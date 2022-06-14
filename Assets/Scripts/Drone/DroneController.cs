@@ -70,10 +70,10 @@ public class DroneController : BaseRigidbody
 
     void Start()
     {
-        
         input = GetComponent<DroneInputs>();
         engines = GetComponentsInChildren<DroneEngine>().ToList<IEngine>();
         rb.AddForce(Vector3.up * 20, ForceMode.Force);
+        audioSource.Play();
     }
 
     #endregion

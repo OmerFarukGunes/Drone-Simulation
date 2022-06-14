@@ -12,10 +12,7 @@ public class Truck : MonoBehaviour
     private int health = 100;
     
 
-    void Start()
-    {
-        missionTask = GameObject.FindGameObjectWithTag("TruckMission").GetComponent<TextMeshProUGUI>();
-    }
+    void Start() => missionTask = GameObject.FindGameObjectWithTag("TruckMission").GetComponent<TextMeshProUGUI>();
 
     private void OnTriggerEnter(Collider coll)
     {

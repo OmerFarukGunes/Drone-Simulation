@@ -5,14 +5,8 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float bulletForce = 4000.0f;
-    private void Awake()
-    {
-        gameObject.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * bulletForce);
-    }
-    private void FixedUpdate()
-    {
-        BulletLife();
-    }
+    private void Awake() => gameObject.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * bulletForce);
+    private void FixedUpdate() =>  BulletLife();
 
     public GameObject bulletHole;
 
